@@ -1,7 +1,7 @@
-export const prerender = true
+export const prerender = true;
 
-import type { LayoutLoad } from './$types';
+import type { LayoutLoad } from "./$types";
 
 export const load: LayoutLoad = async (params) => {
-	return { pathname: params.url.pathname };
+  return { pathname: params.url.pathname };
 };
