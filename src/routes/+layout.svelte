@@ -23,6 +23,16 @@
 </div>
 
 <style>
+  @keyframes -global-slide-in-right {
+    0% {
+      transform: translateX(36px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
   @keyframes -global-slide-in-top {
     0% {
       transform: translateY(-36px);
