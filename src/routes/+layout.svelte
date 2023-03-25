@@ -5,20 +5,26 @@
   import Header from "$lib/components/header.svelte";
   import Saos from "saos";
   import { onMount } from "svelte";
+  import Footer from "$lib/components/Footer.svelte";
 
   let show = false;
   onMount(() => (show = true));
   export let data: LayoutData;
 </script>
 
-<div class="bg-slate-900 text-blue-300 min-h-screen">
+<div class="bg-slate-900 text-blue-300 min-h-screen relative">
   {#if show}
-    <Saos once={true} animation={"slide-in-top .4s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
-      <Header />
-    </Saos>
-    <PageTransition pathname={data.pathname}>
-      <slot />
-    </PageTransition>
+    <div class="min-h-screen bg-gradient-to-b from-slate-800/70 to-slate-900">
+      <Saos once={true} animation={"slide-in-top .4s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
+        <Header />
+      </Saos>
+      <PageTransition pathname={data.pathname}>
+        <div class="z-[2]">
+          <slot />
+        </div>
+      </PageTransition>
+    </div>
+    <Footer />
   {/if}
 </div>
 

@@ -1,12 +1,13 @@
-<div
-  class="lg:px-40 px-8 bg-slate-800/40 py-9 lg:py-10 shadow-sm shadow-slate-800/40
-  font-medium
+<header
+  class="py-9 lg:py-10 border-b-2 border-slate-800 page-spacing sticky top-0
   text-md
-  tracking-widest"
+  tracking-widest uppercase"
 >
-  <ul class="flex lg:gap-16 justify-between">
-    <li class="lg:flex-1">Home</li>
-    <li>My Work</li>
-    <li>Contact</li>
-  </ul>
-</div>
+  <nav>
+    <ul class="flex lg:gap-16 justify-between">
+      <li class="lg:flex-1">Home</li>
+      <li>My Work</li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
