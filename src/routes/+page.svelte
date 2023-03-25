@@ -1,4 +1,6 @@
 <script lang="ts">
+  //TODO: add more semantic html
+  // TODO: don't use grid in js/flutter section
   import Saos from "saos";
   import Icon from "@iconify/svelte";
   import { fade } from "svelte/transition";

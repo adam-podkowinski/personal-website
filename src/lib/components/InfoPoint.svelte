@@ -1,4 +1,5 @@
 <script lang="ts">
+  // TODO: add Saos
   import Icon from "@iconify/svelte";
 
   export let icon: string;
