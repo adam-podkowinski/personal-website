@@ -1,10 +1,11 @@
 <script lang="ts">
-  //TODO: add more semantic html
   // TODO: don't use grid in js/flutter section
+  // TODO: add new route with my work listed inside
   import Saos from "saos";
   import Icon from "@iconify/svelte";
   import { fade } from "svelte/transition";
   import InfoPoint from "$lib/components/InfoPoint.svelte";
+  import ContactItem from "$lib/components/ContactItem.svelte";
 
   let jsHovered = false;
   let flutterHovered = false;
@@ -24,7 +25,7 @@ lg:hover:scale-[200%] cursor-pointer
 </script>
 
 <main class="page-spacing">
-  <div class="lg:flex-row flex flex-col items-center pb-24">
+  <section class="lg:flex-row flex flex-col items-center pb-24">
     <div class="lg:w-[60%]">
       <Saos once={true} animation={"slide-in-top .4s cubic-bezier(0.35, 0.5, 0.65, 0.95) .4s both"}>
         <div class="lg:py-12 py-3 text-xl tracking-wide lg:mr-9">
@@ -74,7 +75,9 @@ lg:hover:scale-[200%] cursor-pointer
           lg:w-fit
           text-center
           hover:text-blue-400 inline-block"
-            href="/work"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/adam-podkowinski"
           >
             See my work
           </a>
@@ -97,7 +100,12 @@ lg:hover:scale-[200%] cursor-pointer
             ⬆ Click Me
           </div>
         {/if}
-        <div
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href={jsHovered
+            ? "https://github.com/adam-podkowinski"
+            : "https://github.com/adam-podkowinski?tab=repositories&language=dart"}
           class="flex gap-6 w-36 lg:w-auto lg:grid lg:gap-0 relative grid-cols-6
         grid-rows-6 auto-cols-fr auto-rows-fr"
         >
@@ -129,12 +137,12 @@ lg:hover:scale-[200%] cursor-pointer
               <Icon icon="simple-icons:flutter" width="100%" />
             </div>
           {/if}
-        </div>
+        </a>
       </Saos>
     </div>
-  </div>
-  <div class="my-3 text-lg relative">
-    <h2 class="font-bold text-4xl mb-6 flex items-center gap-2">
+  </section>
+  <section class="my-3 text-lg relative">
+    <h2 class="font-bold text-4xl mb-8 flex items-center gap-2">
       <Icon icon="material-symbols:person" />
       About me
     </h2>
@@ -151,15 +159,41 @@ lg:hover:scale-[200%] cursor-pointer
       <InfoPoint icon="teenyicons:linux-alt-solid">I also love Linux and FOSS.</InfoPoint>
       <InfoPoint icon="mdi:language-rust">I'm currently learning Rust.</InfoPoint>
     </div>
-  </div>
-  <div class="mt-16 text-lg">
+  </section>
+  <section class="my-16 text-lg">
     <Saos once={true} animation={"slide-in-right .4s cubic-bezier(0.35, 0.5, 0.65, 0.95) both"}>
-      <h2 class="font-bold text-4xl mb-6 flex items-center gap-2" id="contact">
+      <h2 class="font-bold text-4xl mb-8 flex items-center gap-2" id="contact">
         <Icon icon="material-symbols:call" />
         Contact
       </h2>
+      <div class="grid lg:grid-cols-3 grid-cols-1 gap-6">
+        <ContactItem
+          content="adampodkdev@gmail.com"
+          link="mailto:adampodkdev@gmail.com"
+          title="E-Mail"
+          hoverClass="hover:bg-rose-400 hover:border-rose-400 hover:text-slate-900"
+          icon="material-symbols:mail-rounded"
+          delay={0}
+        />
+        <ContactItem
+          title="Phone + Signal"
+          link="tel:+48609105454"
+          delay={0.3}
+          hoverClass="hover:bg-green-400 hover:border-green-400 hover:text-slate-900"
+          icon="material-symbols:phone-in-talk"
+          content="+48 609 105 454"
+        />
+        <ContactItem
+          title="Github"
+          delay={0.6}
+          hoverClass="hover:bg-black hover:border-black hover:text-white"
+          icon="mdi:github"
+          link="https://github.com/adam-podkowinski"
+          content="github.com/adam-podkowinski"
+        />
+      </div>
     </Saos>
-  </div>
+  </section>
 </main>
 
 <style>
