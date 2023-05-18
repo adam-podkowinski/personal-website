@@ -148,7 +148,7 @@ lg:hover:scale-[200%] cursor-pointer
     </h2>
     <div class="grid gap-3 leading-wide tracking-wide max-w-6xl ">
       <InfoPoint icon="material-symbols:school-rounded">
-        I'm a high-school student (16 yo) who's passion were always computers.
+        I'm a high-school student (17 yo) who's passion were always computers.
       </InfoPoint>
       <InfoPoint icon="material-symbols:laptop-chromebook-outline-rounded"
         >I've came on programming at a very young age with C++, game development (as all kids do).</InfoPoint
