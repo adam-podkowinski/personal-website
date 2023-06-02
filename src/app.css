@@ -15,4 +15,3 @@ html {
 .page-spacing {
   @apply px-8 md:px-16 lg:px-24 2xl:px-40;
 }
-

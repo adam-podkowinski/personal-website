@@ -10,16 +10,10 @@
   let jsHovered = false;
   let flutterHovered = false;
   const transitionDuration = 300;
-  const jsClass = `row-start-1 col-start-1 row-end-4 col-end-4 text-blue-300/50
-cursor-pointer
-            hover:shadow-sm hover:text-yellow-300
-duration-[300ms]
-            lg:hover:scale-[200%]          lg:origin-top-left          transition-all`;
-  const flutterClass = `row-start-4 col-start-4 row-end-7 col-end-7
-lg:hover:scale-[200%] cursor-pointer
-          duration-[300ms]
-          lg:origin-bottom-right text-blue-300/50 hover:text-blue-500
-          transition-all hover:shadow-sm`;
+  const jsClass =
+    "row-start-1 col-start-1 row-end-4 col-end-4 text-blue-300/50 cursor-pointer hover:shadow-sm hover:text-yellow-300 duration-[300ms] lg:hover:scale-[200%] lg:origin-top-left transition-all";
+  const flutterClass =
+    "row-start-4 col-start-4 row-end-7 col-end-7 lg:hover:scale-[200%] cursor-pointer duration-[300ms] lg:origin-bottom-right text-blue-300/50 hover:text-blue-500 transition-all hover:shadow-sm";
   const mobile = (cls: string) => `${cls} lg:hidden`;
   const desktop = (cls: string) => `${cls} lg:block hidden`;
 </script>
@@ -91,9 +85,7 @@ lg:hover:scale-[200%] cursor-pointer
       >
         {#if !flutterHovered && !jsHovered}
           <div
-            class="absolute bottom-[-10%] left-[100%] font-medium text-sm whitespace-nowrap
-      -rotate-45
-      animate-pulse"
+            class="absolute bottom-[-10%] left-[100%] font-medium text-sm whitespace-nowrap -rotate-45 animate-pulse"
             in:fade={{ duration: transitionDuration }}
             out:fade={{ duration: transitionDuration }}
           >
@@ -195,6 +187,3 @@ lg:hover:scale-[200%] cursor-pointer
     </Saos>
   </section>
 </main>
-
-<style>
-</style>
