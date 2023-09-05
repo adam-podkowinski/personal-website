@@ -18,6 +18,20 @@
   const desktop = (cls: string) => `${cls} lg:block hidden`;
 </script>
 
+<svelte:head>
+  <title>Adam Podkowiński</title>
+  {@html `
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "type": "WebSite",
+      "name": "Adam Podkowiński",
+      "url": "https://adam-podkowinski.github.io/"
+    }
+  </script>
+`}
+</svelte:head>
+
 <main class="page-spacing">
   <section class="lg:flex-row flex flex-col items-center pb-24">
     <div class="lg:w-[60%]">
@@ -145,8 +159,8 @@
       <InfoPoint icon="material-symbols:laptop-chromebook-outline-rounded"
         >I've came on programming at a very young age with C++, game development (as all kids do).
       </InfoPoint>
-      <InfoPoint icon="material-symbols:send-to-mobile"
-        >However, I quickly switched to mobile development and then web development.
+      <InfoPoint icon="material-symbols:send-to-mobile">
+        However, I quickly switched to mobile development and then web development.
       </InfoPoint>
       <InfoPoint icon="teenyicons:linux-alt-solid">I also love Linux and FOSS.</InfoPoint>
       <InfoPoint icon="mdi:language-rust">I'm currently learning Rust.</InfoPoint>
