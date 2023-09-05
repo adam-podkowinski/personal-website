@@ -10,6 +10,8 @@
     <div class="border-2 border-slate-700 rounded-full p-3 text-3xl">
       <Icon {icon} />
     </div>
-    <p><slot /></p>
+    <p>
+      <slot />
+    </p>
   </div>
 </Saos>

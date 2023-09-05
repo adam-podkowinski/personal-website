@@ -39,6 +39,7 @@
       opacity: 1;
     }
   }
+
   @keyframes -global-slide-in-bot {
     0% {
       transform: translateY(36px);
@@ -49,6 +50,7 @@
       opacity: 1;
     }
   }
+
   @keyframes -global-slide-in-top {
     0% {
       transform: translateY(-36px);
