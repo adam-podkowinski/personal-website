@@ -25,7 +25,7 @@
     {
       "@context": "https://schema.org",
       "type": "WebSite",
-      "name": "Adam Podkowiński",
+      "name": "Adam Podkowiński - Web Developer",
       "url": "https://adam-podkowinski.github.io/"
     }
   </script>
@@ -41,7 +41,7 @@
             Hello, It's Adam 👨‍💻
           </p>
           <p>
-            I'm Adam Podkowinski, a Mobile (<a
+            I'm <strong class="font-medium">Adam Podkowinski</strong>, a Mobile (<a
               href="https://flutter.dev"
               target="_blank"
               rel="noreferrer"
@@ -54,7 +54,7 @@
           <p>
             Because of that, I take great pleasure in using technologies such as
             <a href="https://svelte.dev" class="underline text-orange-600" target="_blank" rel="noreferrer"> Svelte </a>
-            &nbsp;and&nbsp;
+            and
             <a href="https://tailwindcss.com" class="underline text-blue-400" target="_blank" rel="noreferrer">
               Tailwind&nbsp;CSS</a
             >.
@@ -156,8 +156,8 @@
       <InfoPoint icon="material-symbols:school-rounded">
         I'm a high-school student (17 yo) who's passion were always computers.
       </InfoPoint>
-      <InfoPoint icon="material-symbols:laptop-chromebook-outline-rounded"
-        >I've came on programming at a very young age with C++, game development (as all kids do).
+      <InfoPoint icon="material-symbols:laptop-chromebook-outline-rounded">
+        I've came on programming at a very young age with C++, game development (as all kids do).
       </InfoPoint>
       <InfoPoint icon="material-symbols:send-to-mobile">
         However, I quickly switched to mobile development and then web development.

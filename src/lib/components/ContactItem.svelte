@@ -15,10 +15,7 @@
     href={link}
     class={`border-2 rounded-xl px-6 py-3 border-slate-700 text-center transition-colors ${hoverClass} block duration-300`}
   >
-    <h3
-      class="tracking-wide font-medium text-xl flex justify-center
-      items-center gap-2"
-    >
+    <h3 class="tracking-wide font-medium text-xl flex justify-center items-center gap-2">
       <Icon {icon} />
       {title}
     </h3>
